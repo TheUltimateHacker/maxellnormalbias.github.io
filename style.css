@@ -13,6 +13,7 @@ h2{
 .mini{
 	text-align: center;
 	font-size: 75%;
+	font-weight: normal;
 }
 
 .cool-button{
@@ -30,10 +31,6 @@ h2{
 	text-align: center;
 	color: #FFFFFF;
 	font-weight: bold;
-}
-
-.cool-button .mini{
-	font-weight: regular;
 }
 
 .blue-button{
