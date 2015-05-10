@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Testing everything
-category: software
+category: stuff
 ---
 
 I'm just testing things out. Does _markdown_ work?
