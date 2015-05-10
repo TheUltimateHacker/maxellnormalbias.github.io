@@ -5,14 +5,14 @@ body{
 	margin-right: 25%;
 }
 
-h1{
+h2{
 	text-align: center;
 }
 
 
-.top-box{
-	background-color: #FFFFFF;
-	border: 1px solid #000000;
+.mini{
+	text-align: center;
+	font-size: 75%;
 }
 
 .cool-button{
@@ -28,26 +28,38 @@ h1{
 	min-width: 25%;
 	max-width: 25%;
 	text-align: center;
-	font-family: "Oswald";
 	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.cool-button .mini{
+	font-weight: regular;
 }
 
 .blue-button{
 	background-color: #3399FF;
 	max-width: 100%;
+	font-weight: normal;
+}
+
+.blue-button h1{
+	display: inline;
+	font-size: inherit;
+	font-weight: bold;
 }
 
 .blue-button a{
 	color: #FFFFFF;
 }
 
-.mini{
-	text-align: center;
-	font-size: 75%;
-}
+
 
 nav{
 	float: right;
+}
+nav a~a{ 
+	border-left: 1px solid #FFFFFF; 
+	padding-left: 4px; 
 }
 
 footer{
