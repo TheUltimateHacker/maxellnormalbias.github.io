@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<h1>Software</h1>
+<p>Software you can download, right here, <s>RIGHT NOW on Spatry's Cup of Linux!</s></p>
+{% for post in site.posts %}
+{% if post.category == "software" %}
+<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+{% endif %}
+{% endfor %}

@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<h1>Blog posts</h1>
+<p>Posts I've written for the explicit purpose of being on this website. </p>
+<ul>
+{% for post in site.posts %}
+{% if post.category == "blog" %}
+<li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>

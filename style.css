@@ -1,0 +1,56 @@
+body{
+	background-color: #FCFCFC;
+	font-family: "Noto Sans", sans-serif;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+h1{
+	text-align: center;
+}
+
+
+.top-box{
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+}
+
+.cool-button{
+	display: block;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	background-color: #FF6600;
+	min-height: 25%;
+	min-width: 25%;
+	max-width: 25%;
+	text-align: center;
+	font-family: "Oswald";
+	color: #FFFFFF;
+}
+
+.blue-button{
+	background-color: #3399FF;
+	max-width: 100%;
+}
+
+.blue-button a{
+	color: #FFFFFF;
+}
+
+.mini{
+	text-align: center;
+	font-size: 75%;
+}
+
+nav{
+	float: right;
+}
+
+footer{
+	border-top: 1px solid #000000;
+	text-align: center;
+}
