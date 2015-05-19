@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Free web hosting can get way better than GeoCities
+title: Free web hosting can get way better than GeoCities.ws
 category: blog
 ---
 
@@ -11,8 +11,8 @@ This article shows why you shouldn't use it, and the alternatives you should use
 
 ### Static Only
 
-This might seem fine. But it isn't! You can make every page individually, manuaddy adding the footer and header into each one, slowly building up dead links and incompatibillity with future browsers as time goes on. Sure, if you have 10 pages, you can probably maintain them, but if you have a website that's going to be around for a long time, your first page will probably look nothing like your most recent one, and pages around the website might be incompatible with recent browsers. This is why you should either use a framework or a preprocessor like Jekyll (which is what I use) for your site.
-_(Clarification: You can use Jekyll on GeoCities since it generates static HTML, but there's no integration for it. You can also pay to have support for things that aren't static HTML, but since we're comparing free webhosts here, I didn't talk about it.)_
+This might seem fine. But it isn't! You can make every page individually, manually adding the footer and header into each one, slowly building up dead links and incompatibillity with future browsers as time goes on. Sure, if you have 10 pages, you can probably maintain them, but if you have a website that's going to be around for a long time, your first page will probably look nothing like your most recent one, and pages around the website might be incompatible with recent browsers. This is why you should either use a framework or a preprocessor like Jekyll (which is what I use) for your site.
+_(Clarification: You can use Jekyll on geocities.ws since it generates static HTML, but there's no integration for it. You can also pay to have support for things that aren't static HTML, but since we're comparing free webhosts here, I didn't talk about it.)_
 
 ### Bad File Management
 
