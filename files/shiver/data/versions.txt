@@ -1,2 +1,0 @@
-classic;ShiftOS 0.0.8;Stable;http://www.google.com
-classic;ShiftOS 0.0.1;Unstable;http://maxellnormalbias.github.io/crap.exe
