@@ -5,10 +5,20 @@ body{
 	margin-right: 25%;
 }
 
+@media only screen and (max-device-width: 480px) {
+	body{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
 h2{
 	text-align: center;
 }
 
+video{
+	width: 100%
+}
 
 .mini{
 	text-align: center;
