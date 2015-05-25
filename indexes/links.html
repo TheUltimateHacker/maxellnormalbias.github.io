@@ -1,0 +1,13 @@
+---
+layout: default
+category: index
+title: Links
+description: Links to other sites that I think you should check out.
+---
+<h2>{{ page.title }}</h2>
+<p>{{ page.description }}</p>
+<ul>
+	{% for link in site.data.links %}
+	<li><a href="{{ link.url }}">{{ link.name }}</a> {{ link.description }}</li>
+	{% endfor %}
+</ul>

@@ -10,6 +10,10 @@ body{
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+	.cool-button{
+		min-width: 90%;
+		max-width: 90%;
+	}
 }
 
 h2{
@@ -36,8 +40,8 @@ video{
 	border-radius: 10px;
 	background-color: #FF6600;
 	min-height: 25%;
-	min-width: 25%;
-	max-width: 25%;
+	min-width: 50%;
+	max-width: 50%;
 	text-align: center;
 	color: #FFFFFF;
 	font-weight: bold;

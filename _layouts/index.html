@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+	<h2>{{ page.title }}</h2>
+	<p>{{ page.description }}</p>
+	<ul>
+    {% for post in site.posts %}
+		{% if post.category == page.indextype %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+		{% endif %}
+	{% endfor %}
+    {% include footer.html %}
+	</ul>
+  </body>
+
+</html>
