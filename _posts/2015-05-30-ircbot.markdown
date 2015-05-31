@@ -1,0 +1,39 @@
+---
+layout: post
+category: software
+title: An IRC bot quote viewer
+---
+
+This is some software I've been writing over the past few days: my very own IRC bot. And it has a web interface!
+
+Thanks to jquery, socket.io, and other great libraries, I got this to work. Also, thanks to &#124;, who pretty much told me how to write this bot. And wrote half the code.
+
+<input type="button" value="Get a new random quote" id="get"/>
+
+<ul id="quotes">
+    <li>Warning: These quotes may contain swear words or other offensive material. Click the button at your own risk.</li>
+</ul>
+
+<p id="number"/>
+
+<script src="http://cdn.jsdelivr.net/socket.io-client/1.3.2/socket.io.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+    var socket = io('robit.herokuapp.com');
+    $(document).ready(function (){
+        $("#get").click(function () {
+            socket.emit("getquote");
+        });
+        
+        socket.on("quote", function(sentQuote){
+            $("#quotes").empty();
+            sentQuote.chat.forEach(function(entry){
+                $("#quotes").append("<li><strong>" + entry.nick + "</strong> - " + entry.text + "</li>");
+            });
+        });
+        
+        socket.on("number", function(number){
+            $("#number").text("The counter is currently set to " + number)
+        });
+    });
+</script>
