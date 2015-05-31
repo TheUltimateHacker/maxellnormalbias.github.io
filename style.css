@@ -68,12 +68,17 @@ video{
 nav{
 	float: right;
 }
-nav a~a{ 
-	border-left: 1px solid #FFFFFF; 
-	padding-left: 4px; 
+nav a~a{
+	border-left: 1px solid #FFFFFF;
+	padding-left: 4px;
 }
 
 footer{
 	border-top: 1px solid #000000;
 	text-align: center;
+}
+
+textarea{
+	width: 100%;
+	height: 250px;
 }

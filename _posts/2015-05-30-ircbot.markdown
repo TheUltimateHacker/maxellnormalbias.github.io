@@ -16,22 +16,34 @@ Thanks to jquery, socket.io, and other great libraries, I got this to work. Also
 
 <p id="number"/>
 
+You can also submit quotes. I'll have to review them first though.
+
+<textarea id="quotebox"></textarea>
+
+<input type="button" value="Submit a quote" id="submit"/>
+
 <script src="http://cdn.jsdelivr.net/socket.io-client/1.3.2/socket.io.min.js"></script>
 <script src="http://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
     var socket = io('robit.herokuapp.com');
     $(document).ready(function (){
+
+        $("#submit").click(function () {
+            socket.emit("submitquote", $("#quotebox").val());
+            alert("Quote submitted.");
+        });
+
         $("#get").click(function () {
             socket.emit("getquote");
         });
-        
+
         socket.on("quote", function(sentQuote){
             $("#quotes").empty();
             sentQuote.chat.forEach(function(entry){
                 $("#quotes").append("<li><strong>" + entry.nick + "</strong> - " + entry.text + "</li>");
             });
         });
-        
+
         socket.on("number", function(number){
             $("#number").text("The counter is currently set to " + number)
         });
