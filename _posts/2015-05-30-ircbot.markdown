@@ -16,7 +16,9 @@ Thanks to jquery, socket.io, and other great libraries, I got this to work. Also
 
 <p id="number"/>
 
-You can also submit quotes. I'll have to review them first though.
+You can also submit quotes, if you're not a member of #techtalk on AlphaChat. You should use this syntax:
+
+<author> what the person said
 
 <textarea id="quotebox"></textarea>
 
