@@ -28,6 +28,11 @@ You can also submit quotes, if you're not a member of #techtalk on AlphaChat. Yo
 <script src="http://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
     var socket = io('robit.herokuapp.com');
+
+    function sanitize(input){
+      return input.replace("<", "&lt;").replace(">", "&gt;")
+    }
+
     $(document).ready(function (){
 
         $("#submit").click(function () {
@@ -42,7 +47,7 @@ You can also submit quotes, if you're not a member of #techtalk on AlphaChat. Yo
         socket.on("quote", function(sentQuote){
             $("#quotes").empty();
             sentQuote.chat.forEach(function(entry){
-                $("#quotes").append("<li><strong>" + entry.nick + "</strong> - " + entry.text + "</li>");
+                $("#quotes").append("<li><strong>" + sanitize(entry.nick) + "</strong> - " + sanitize(entry.text) + "</li>");
             });
         });
 
