@@ -30,7 +30,7 @@ You can also submit quotes, if you're not a member of #techtalk on AlphaChat. Yo
     var socket = io('robit.herokuapp.com');
 
     function sanitize(input){
-      return input.replace("<", "&lt;").replace(">", "&gt;")
+      return input.replace(/</g, "&lt;").replace(/>/g, "&gt;")
     }
 
     $(document).ready(function (){
