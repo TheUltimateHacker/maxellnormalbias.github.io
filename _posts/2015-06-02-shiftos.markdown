@@ -1,0 +1,8 @@
+---
+layout: post
+category: stuff
+title: ShiftOS repo backup
+---
+This is the download to an archive of the ShiftOS repository, which was taken down. Why did I put this here? No idea.
+
+<a href="https://github.com/maxellnormalbias/maxellnormalbias.github.io/releases/download/shiftos-archive/ShiftOS.zip" class="cool-button">Download the zip archive</a>
