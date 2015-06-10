@@ -74,6 +74,7 @@ video{
 
 .site-logo{
 	height: 3em;
+	flex: 0 0 auto;
 }
 
 .header-nav{
