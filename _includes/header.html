@@ -1,7 +1,36 @@
-<header class="cool-button blue-button">
-<h1>maxell's site</h1>
-<nav>
-	<a href="/">Home</a>
-	<a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}">Reddit</a>
-</nav>
+<header class="site-header">
+	<a href="/index.html" class="imglink">
+		<img src="/files/maxell-logo-small.svg" class="site-logo">
+	</a>
+	<div class="blue-button marquee-container">
+		<span class="marquee" id="marquee">
+			Message of the day: {{ site.motd }}
+			Five most recent posts
+			{% for post in site.posts limit:5 %}
+				- <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})
+			{% endfor %}
+		</span>
+	</div>
+	<nav class="blue-button header-nav">
+		Share:
+		<a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}">Reddit</a>
+		<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">G+</a>
+		<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">FB</a>
+	</nav>
 </header>
+
+<script>
+	function notScrollableStuff() {
+		return (
+				('ontouchstart' in window)
+				|| (navigator.MaxTouchPoints > 0)
+				|| (navigator.msMaxTouchPoints > 0)
+			);
+	}
+
+	if (notScrollableStuff()) {
+		document.getElementById('marquee').className = "";
+		document.getElementById('marquee').innerHTML = '<a href="/news.html">Tap to view the news</a>';
+	}
+
+</script>

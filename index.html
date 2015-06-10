@@ -3,6 +3,16 @@ layout: default
 ---
 
 <h2>Welcome to maxell's site</h2>
+
+<p class="center">
+	Hi, i'm maxell - well my real name is Jacob, but on the internet people know me as maxell.
+	This is my personal website, where I'll post things i've made, files i've found,
+	and other stuff.
+</p>
+<p class="center">
+	Email me at <a href="mailto:0087yugbocaj@gmail.com">my email address</a> or talk to me on #techtalk on AlphaChat.
+</p>
+
 {% for webpage in site.pages %}
 	{% if webpage.category == "index" %}
 		<a href="{{ webpage.url }}" class="cool-button">
@@ -11,5 +21,3 @@ layout: default
 		</a>
 	{% endif %}
 {% endfor %}
-<ul>
-</ul>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Colin and Jacob's glacier project
+title: Colin and Jacob's glacier school project
 category: stuff
 ---
 
