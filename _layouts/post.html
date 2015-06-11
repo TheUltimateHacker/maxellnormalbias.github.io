@@ -1,14 +1,27 @@
----
-layout: default
----
-<div class="content">
+<!DOCTYPE html>
+<html>
 
-  <header>
-    <h2>{{ page.title }}</h2>
-    <p class="mini">This page was made on {{ page.date | date: "%b %-d, %Y" }}</p>
-  </header>
+  {% include head.html %}
 
-  <article>
-    {{ content }}
-  </article>
-</div>
+  <body>
+
+    {% include header.html %}
+
+    <div class="content">
+
+      <header>
+        <h2>{{ page.title }}</h2>
+        <p class="mini">This page was made on {{ page.date | date: "%b %-d, %Y" }}</p>
+      </header>
+
+      <article>
+        {{ content }}
+      </article>
+    </div>
+
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
