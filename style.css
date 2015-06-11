@@ -5,6 +5,7 @@ body{
 	margin-top: 0;
 	margin-left: 0;
 	margin-right: 0;
+	margin-bottom: 0;
 }
 
 @media (max-device-width: 600px) {
@@ -37,7 +38,6 @@ video{
 	margin-right: auto;
 	border-radius: 5px;
 	background-color: #FF6600;
-	min-height: 25%;
 	min-width: 50%;
 	max-width: 50%;
 	text-align: center;
@@ -72,7 +72,6 @@ video{
 	display: flex;
 	color: #FFFFFF;
 	background-color: #3399FF;
-	padding: 5px;
 }
 
 .site-logo{
@@ -88,14 +87,21 @@ video{
 	flex: 0 0 auto;
 }
 
-.header-nav a~a{
-	border-left: 1px solid #FFFFFF;
-	padding-left: 5px;
-}
-
 .header-nav a{
 	color: #FFFFFF;
 	padding-right: 5px;
+	padding-left: 5px;
+	height: 1005;
+	background-color: #33CCFF;
+	text-decoration: none;
+}
+
+.header-nav a:hover{
+	text-decoration: underline;
+}
+
+.header-nav .imglink{
+	background-color: #3399FF;
 }
 
 .site-footer{
@@ -112,9 +118,17 @@ textarea{
 .content{
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 900px;
+	flex: 1;
+	min-height: 100%;
+	max-width: 800px;
 }
 
 .imglink{
 	display: inline-block;
+}
+
+#wrapper{
+	display: flex;
+  flex-direction: column;
+	min-height: 100vh;
 }

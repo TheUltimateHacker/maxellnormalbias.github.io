@@ -4,24 +4,25 @@
   {% include head.html %}
 
   <body>
+    <div id="wrapper">
 
-    {% include header.html %}
+      {% include header.html %}
 
-    <div class="content">
+      <div class="content">
 
-      <header>
-        <h2>{{ page.title }}</h2>
-        <p class="mini">This page was made on {{ page.date | date: "%b %-d, %Y" }}</p>
-      </header>
+        <header>
+          <h2>{{ page.title }}</h2>
+          <p class="mini">This page was made on {{ page.date | date: "%b %-d, %Y" }}</p>
+        </header>
 
-      <article>
-        {{ content }}
-      </article>
+        <article>
+          {{ content }}
+        </article>
+      </div>
+
+      {% include footer.html %}
+
     </div>
-
-
-    {% include footer.html %}
-
   </body>
 
 </html>
