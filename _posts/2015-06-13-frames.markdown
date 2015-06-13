@@ -1,0 +1,39 @@
+---
+category: blog
+layout: post
+title: Why you shouldn't use frames.
+---
+
+To quote some random person at the beginning of a Guns 'n' Roses song, "What we've got here is failure to communicate. Some men you just can't reach. So you get what we had here last week, which is the way he wants it. Well, he gets it!"
+
+I like to imagine that person is talking to someone who uses frames on their site. Everybody from Mozilla to Microsoft urges you to **not use frames**, because they're terrible. And these people don't listen and still use frames for whatever reason. So I think I should break down the reasons you should not use frames.
+
+###Links don't work
+
+Okay, maybe if you write better HTML links will open outside of the frame. But that doesn't change the fact that most sites don't do this! Say there's a links page that has an interesting site. Well, it opens in a frame, locking you to the navigation of the site you were on before, and forcing you to right click and open it in a new tab or window.
+
+But even if you do write proper, valid HTML(-10<sup>9999</sup>) you're not going to be able to share links easily. Some sites do have permalinks to pages but then they don't show the navigation.
+
+###They take up space
+
+Do you really need to see that footer _all_ the time? Why not just have it at the bottom of the page? That animated Internet Explorer button _distracts people from reading the actual content_.
+
+###Better ways to not rewrite things
+
+A pro-frame argument I've heard is "Well, if I didn't use frames I'd have to copy and paste the header/footer/navigation, and then I would have to change every single file if I wanted something different!". Well, that's simply not true. There are a whole bunch of solutions for that. This site uses Jekyll, which comes with GitHub pages. If you're not using GitHub Pages you'll have to compile your Jekyll site manually. You could even use WordPress &mdash; even though it's PHP powered &mdash; and write a theme manually.
+
+###Not scalable
+
+If you try and use a frames page on a mobile device it won't work. There's no way to display the navigation somewhere _else_ when screen space is tight. So the page is needlessly big, not in file size, but in screen real estate. Text becomes unreadably small and you have to zoom in on everything, making it an awkward experience.
+
+###Flexboxes exist
+
+If you want to make a sticky footer, you can use flexboxes really easily instead of frames. In fact this site uses flexboxes! (Sorry safari users&hellip;)
+
+###It's deprecated
+
+This might seem like a copout, but frames are _deprecated_. That means that people who make the most popular browsers (i.e. Google and Mozilla) are going to phase it out soon. It's happened with tags in the past. Anyone remember &lt;basefont&gt;?
+
+###So just don't use them!
+
+The less people use frames, the more sane web design we'll have. If you truly want to embed another website, use &lt;iframe&gt; instead. And that's only really limited to ads.
