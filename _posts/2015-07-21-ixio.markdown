@@ -1,0 +1,11 @@
+---
+title: ix.io poster
+category: software
+layout: post
+---
+This is just a quick tool to post pastes onto ix.io without the command line. When you click submit, you'll get the link to the ix.io page with your text on it.
+
+<form action="http://ix.io" method="post">
+  <textarea name="f:1"></textarea>
+  <input type="submit" value="Submit Text"></input>
+</form>
