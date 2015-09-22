@@ -1,5 +1,5 @@
 ---
-title: Collecting Windows Betas: Why I don't understand it
+title: "Collecting Windows Betas: Why I don't understand it"
 category: blog
 layout: post
 ---
@@ -8,13 +8,13 @@ I don't know why people collect Windows betas. It's baffling to me. I've asked t
 
 ### Disclaimer
 
-I don't hate any of you guys. I don't hate Windows, BetaArchive, WinworldPC or whatever you're from. In fact - if you can explain it to me, please (email me)[mailto:0087yugbocaj@gmail.com]. But hold off on the pitchforks for now.
+I don't hate any of you guys. I don't hate Windows, BetaArchive, WinworldPC or whatever you're from. In fact - if you can explain it to me, please <a href="mailto:0087yugbocaj@gmail.com">email me</a>. But hold off on the pitchforks for now.
 
 ### My criticisms
 
 Betas such as Chicago, Whistler, and Longhorn are _very_ well documented. We've pretty much gotten every build from every development stage by now. Sites like _BetaWiki_ and _longhorn.ms_ are very thorough guides to pretty much every beta build. So, there's no need to install them in a virtual machine and "check them out".
 
-And betas do not run well on actual hardware - or even do anything useful on a virtual machine. I was once discussing web browsers with (nerd73)[https://www.youtube.com/channel/UCLd93VFZFwRR25nxKFks1bw] and he told me he could get Firefox 3 to run on Longhorn... with **hacks**. So, if you're going to use a Windows OS in a virtual machine, why not use one that works?
+And betas do not run well on actual hardware - or even do anything useful on a virtual machine. I was once discussing web browsers with <a href="https://www.youtube.com/channel/UCLd93VFZFwRR25nxKFks1bw">nerd73</a> and he told me he could get Firefox 3 to run on Longhorn... with **hacks**. So, if you're going to use a Windows OS in a virtual machine, why not use one that works?
 
 And the only other reason I could ever think someone would collect something is sentimental value. There is no such thing as nostalgia for software that wasn't even released. There is no real emotional connection to Windows betas. If they were interesting or functional, this wouldn't be needed - but they're the last reason I can think of.
 

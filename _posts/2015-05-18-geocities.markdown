@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Free web hosting can get way better than GeoCities.ws
 category: blog
+layout: post
 ---
 
 Hi, i'm maxell, and welcome to my site. Here is the long overdue first post.
