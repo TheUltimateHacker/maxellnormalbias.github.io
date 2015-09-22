@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 
 body{
 	background-color: #FCFCFC;
@@ -69,6 +72,9 @@ video{
 }
 
 .site-header{
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;
 	color: #FFFFFF;
 	background-color: #3399FF;
@@ -78,20 +84,18 @@ video{
 	height: 1em;
 }
 
-
-.header-nav{
-	flex: 1 0 auto;
-}
-
 .static-size{
-	flex: 0 0 auto;
+	-webkit-box-flex: 0 0 auto;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -webkit-flex: 0 0 auto;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: 0 0 auto;           /* IE 10 */
+  flex: 0 0 auto;               /* NEW, Spec - Firefox, Chrome, Opera */
 }
 
 .header-nav a{
 	color: #FFFFFF;
 	padding-right: 5px;
 	padding-left: 5px;
-	height: 1005;
+	height: 1em;
 	background-color: #33CCFF;
 	text-decoration: none;
 }
@@ -118,7 +122,10 @@ textarea{
 .content{
 	margin-left: auto;
 	margin-right: auto;
-	flex: 1;
+	-webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: 1;           /* IE 10 */
+  flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
 	min-height: 100%;
 	max-width: 800px;
 }
