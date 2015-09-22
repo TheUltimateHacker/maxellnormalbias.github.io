@@ -5,18 +5,10 @@
 			<img src="/files/maxell-logo.svg" class="site-logo">
 		</a>
 		<a href="/news.html">What's new</a>
-		{% if page.layout == "post" %}
-			{% for webpage in site.pages %}
-				{% if webpage.indextype == page.category %}
-					<a href="{{webpage.url}}">Back to {{ webpage.title }}</a>
-				{% endif %}
-			{% endfor %}
-		{% endif %}
-	</nav>
-	<nav class="header-nav static-size">
-		Share on
-		<a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}">reddit</a>
-		<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">G+</a>
-		<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">FB</a>
+		{% for webpage in site.pages %}
+			{% if webpage.category == "index" %}
+				<a href="{{ webpage.url }}" title="{{ webpage.description }}">{{ webpage.title }}</a>
+			{% endif %}
+		{% endfor %}
 	</nav>
 </header>

@@ -1,27 +1,15 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  {% include head.html %}
-
-  <body>
-    <div id="wrapper">
-      {% include header.html %}
-      <div class="content">
-      	<h2>{{ page.title }}</h2>
-      	<p>{{ page.description }}</p>
-      	<ul>
-          {% for post in site.posts %}
-        		{% if post.category == page.indextype %}
-        			<li>
-        				<a href="{{ post.url }}">{{ post.title }}</a>
-        			</li>
-        		{% endif %}
-      	  {% endfor %}
-        </ul>
-      </div>
-      {% include footer.html %}
-  </div>
-
-  </body>
-
-</html>
+<h2>{{ page.title }}</h2>
+<p>{{ page.description }}</p>
+<ul>
+  {% for post in site.posts %}
+		{% if post.category == page.indextype %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+		{% endif %}
+  {% endfor %}
+</ul>

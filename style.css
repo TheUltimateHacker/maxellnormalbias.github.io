@@ -80,7 +80,7 @@ video{
 
 
 .header-nav{
-	flex: 1 1 auto;
+	flex: 1 0 auto;
 }
 
 .static-size{
