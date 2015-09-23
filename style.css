@@ -114,6 +114,8 @@ textarea{
   flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
 	min-height: 100%;
 	max-width: 800px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .imglink{
