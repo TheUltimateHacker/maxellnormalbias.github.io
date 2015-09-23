@@ -66,11 +66,7 @@ video{
 }
 
 .site-header h1{
-	display: none;
-}
-
-.site-logo{
-	height: 1em;
+	font-size: 1em;
 }
 
 .static-size{
@@ -91,10 +87,6 @@ video{
 
 .header-nav a:hover{
 	text-decoration: underline;
-}
-
-.header-nav .imglink{
-	background-color: #3399FF;
 }
 
 .site-footer{
