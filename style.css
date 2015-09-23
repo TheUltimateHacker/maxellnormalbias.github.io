@@ -66,6 +66,7 @@ video{
 }
 
 .site-header h1{
+	display: inline;
 	font-size: 1em;
 }
 
